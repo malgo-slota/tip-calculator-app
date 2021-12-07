@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+header{
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: hsl(183, 100%, 15%);
+}
+
+input, button{
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+label{
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+.inputs-container>label{
+     margin-top: 25px; 
+}
+
+output{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: hsl(172, 67%, 45%);
+}
+
+
+.main-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 100%;
+   background-color: white;
+   border-radius: 20px;
+   padding: 10px;
+   
+   
+}
+
+.inputs-container{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.inputs-container>input{
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    height: 40px;
+    width: 100%;
+}
+
+.bill-input{
+    background: url(images/icon-dollar.svg) no-repeat scroll 10px 10px;
+    padding: 0px 30px;
+    text-align: right;
+}
+
+.num-people-input{
+    background: url(images/icon-person.svg) no-repeat scroll 10px 10px;
+    padding: 0px 30px;
+    text-align: right;
+}
+
+.tip-wrapper{
+    display: grid;
+    grid-template-columns: 160px 160px;
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-top: 10px;
+}
+
+.tip-btn{
+  border: none;
+  background-color:hsl(183, 100%, 15%);
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  /* styling value property */
+  font-family: monospace;
+  font-weight: 700;
+  
+}
+
+.active-btn{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#custom-btn {
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(186, 14%, 43%);
+    text-align: center;
+}
+
+#custom-btn::placeholder {
+  text-align: center;
+}
+
+
+.result-container{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.title-result{
+    color: white;
+}
+
+.result{
+    background-color: transparent;
+    border: none;
+    margin: 15px 0;
+}
+
+.tip-amount, .total-person{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset-btn{
+    padding: 5px;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+
+.reset-btn:hover{
+    background-color: hsl(186, 14%, 43%);
+}
+
+.reset-btn:disabled{
+    background-color: hsl(186, 14%, 43%);
+} 
+
+@media only screen and (min-width:600px) {
+    
+    .main-container{
+        flex-direction: row;
+    }
+
+    .inputs-container{
+        margin-bottom: 20px;
+    }
+
+    .result-container{
+        width: 35vw;
+    }
+
+    .tip-wrapper{
+    grid-template-columns: 120px 120px 120px;
+    column-gap: 20px;
+    row-gap: 15px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
